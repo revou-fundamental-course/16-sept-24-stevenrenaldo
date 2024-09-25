@@ -2,10 +2,7 @@ let slideIndex = 1;
 
 //greeting
 const replaceName = () => {
-  //let name = prompt('Halo, Siapakah nama Anda?', 'Steven');
-
-  //make static value to prevent annoying experience
-  let name = 'Steven';
+  let name = prompt('Halo, Siapakah nama Anda?', 'Steven');
   //console.log(name);
 
   document.getElementById('name').innerHTML = name ? ' ' + name : '';
@@ -21,9 +18,10 @@ btnMenu.addEventListener('click', function () {
   toggleMenuButton();
 });
 
+//if menu is click then hide menuList
 let menu = document.getElementById('menu');
-let menuLink = menu.getElementsByTagName('a');
-const menusArray = [...menuLink];
+let menuList = menu.getElementsByTagName('a');
+const menusArray = [...menuList];
 menusArray.forEach((item) => {
   item.addEventListener('click', function () {
     toggleMenuButton();
@@ -38,16 +36,22 @@ const slideImage = (n) => {
 
 const showImages = (n) => {
   let i;
+
+  //get image list
   let imgList = document
     .getElementById('image-slider')
     .getElementsByTagName('img');
+
+  //if n > length of imgList then set slide index to 1
   if (n > imgList.length) slideIndex = 1;
   else if (n < 1) slideIndex = imgList.length;
 
+  //hide all image
   for (i = 0; i < imgList.length; i++) {
     imgList[i].style.display = 'none';
   }
 
+  //show image (only seleted index)
   imgList[slideIndex - 1].style.display = 'block';
 };
 
@@ -55,12 +59,13 @@ const initImageSlider = () => {
   //show slider at index 1
   showImages(slideIndex);
 
-  //button prev & next
+  //button slide prev
   let btnSlidePrev = document.getElementById('slide-prev');
   btnSlidePrev.addEventListener('click', function () {
     slideImage(-1);
   });
 
+  //btn slide next
   let btnSlideNext = document.getElementById('slide-next');
   btnSlideNext.addEventListener('click', function () {
     slideImage(1);
@@ -90,6 +95,7 @@ const validateForm = () => {
   const gender = document.forms['message-form']['gender'].value;
   const message = document.forms['message-form']['message'].value;
 
+  //form validation
   if (name === '') {
     hasError = true;
     document.getElementById('error-name').innerHTML = 'Nama tidak boleh kosong';
@@ -113,6 +119,7 @@ const validateForm = () => {
       'Pesan tidak boleh kosong';
   }
 
+  //show result
   if (!hasError) {
     const currentDate = new Date();
     let birthDates = birthDate;
@@ -126,6 +133,7 @@ const validateForm = () => {
       console.log(error);
     }
 
+    //print result
     document.getElementById('form-result').innerHTML = `
     <div>
       <p><b>Current time</b> : ${currentDate}</p> 
@@ -141,8 +149,10 @@ const validateForm = () => {
 };
 
 const initForm = () => {
+  //set default date to now
   document.getElementById('birth-date').valueAsDate = new Date();
 
+  //button submit
   let messageForm = document.getElementById('message-form');
   messageForm.addEventListener('submit', function (e) {
     e.preventDefault();
@@ -152,9 +162,9 @@ const initForm = () => {
 //end of form
 
 //init page
-replaceName();
-
 initImageSlider();
 
 initForm();
+
+replaceName();
 //end of init page
