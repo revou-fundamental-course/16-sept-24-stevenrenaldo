@@ -509,6 +509,9 @@ main section h2 {
 #profile article > ul > li > ul {
   padding-left: 15px;
 }
+#profile article > ul > li > ul li {
+  list-style: circle;
+}
 #portofolio ul {
   margin-bottom: 0;
 }
