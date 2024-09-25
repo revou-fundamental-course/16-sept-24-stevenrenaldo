@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Edukita Online</title>
+    <link
+      href="./assets/img/favicon.svg"
+      rel="shortcut icon"
+      type="image/x-icon"
+    />
+    <link href="./assets/img//favicon-2.svg" rel="apple-touch-icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <header>
+      <div>
+        <img src="./assets/img/logo.png" alt="Revou Logo" />
+        <button id="hamburger-menu">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="1em"
+            height="1em"
+            viewBox="0 0 24 24"
+          >
+            <path
+              fill="currentColor"
+              d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"
+            />
+          </svg>
+        </button>
+      </div>
+      <nav id="menu">
+        <a href="#">Home</a>
+        <a href="#profile">Our Profile</a>
+        <a href="#portofolio">Portofolio</a>
+        <a href="#contact">Message Us</a>
+      </nav>
+    </header>
+
+    <main>
+      <section id="hero">
+        <h1>Hi<span id="name"></span>! Welcome To Edukita.</h1>
+        <p>Belajar Kapan Saja, Di Mana Saja</p>
+        <div id="image-slider">
+          <img src="./assets/img/banner-1.jpeg" alt="banner" />
+          <img src="./assets/img/banner-2.jpeg" alt="banner 2" />
+          <img src="./assets/img/banner-3.jpeg" alt="banner 3" />
+          <button id="slide-prev">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="1em"
+              height="1em"
+              viewBox="0 0 48 48"
+            >
+              <path
+                fill="#fff"
+                d="m30.9 43l3.1-3.1L18.1 24L34 8.1L30.9 5L12 24z"
+              />
+            </svg>
+          </button>
+          <button id="slide-next">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="1em"
+              height="1em"
+              viewBox="0 0 48 48"
+            >
+              <path
+                fill="#fff"
+                d="M17.1 5L14 8.1L29.9 24L14 39.9l3.1 3.1L36 24z"
+              />
+            </svg>
+          </button>
+        </div>
+      </section>
+
+      <section id="profile">
+        <h2>Our Profile</h2>
+        <article>
+          <h3>Tentang Kami</h3>
+          <p>
+            Edukita Online adalah platform edukasi online yang menyediakan
+            berbagai kursus berkualitas tinggi untuk membantu siapa saja
+            mengembangkan keterampilan dan pengetahuan mereka. Dengan instruktur
+            yang berpengalaman dan materi pembelajaran yang up-to-date, kami
+            berkomitmen untuk memberikan pengalaman belajar yang fleksibel,
+            efektif, dan menyenangkan bagi para pelajar di seluruh dunia.
+          </p>
+          <h3>Visi dan Misi</h3>
+          <ul>
+            <li>
+              <b>Visi:</b> Menjadi platform belajar online terbaik yang
+              memberdayakan setiap individu untuk mencapai potensi mereka.
+            </li>
+            <li>
+              <b>Misi:</b>
+              <ul>
+                <li>
+                  Menyediakan kursus yang berkualitas dan relevan dengan
+                  perkembangan industri.
+                </li>
+                <li>
+                  Membantu siswa mengembangkan keterampilan yang diperlukan
+                  untuk sukses di era digital.
+                </li>
+                <li>
+                  Menyediakan pengalaman belajar yang fleksibel dan mudah
+                  diakses oleh siapa saja, di mana saja.
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </article>
+      </section>
+
+      <section id="portofolio">
+        <h2>Portofolio</h2>
+        <ul class="row">
+          <li class="col-12 col-md-3">
+            <div>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="1em"
+                height="1em"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  fill="currentColor"
+                  d="M16 17v2H2v-2s0-4 7-4s7 4 7 4m-3.5-9.5A3.5 3.5 0 1 0 9 11a3.5 3.5 0 0 0 3.5-3.5m3.44 5.5A5.32 5.32 0 0 1 18 17v2h4v-2s0-3.63-6.06-4M15 4a3.4 3.4 0 0 0-1.93.59a5 5 0 0 1 0 5.82A3.4 3.4 0 0 0 15 11a3.5 3.5 0 0 0 0-7"
+                />
+              </svg>
+              <p>Lebih dari 100.000 siswa terdaftar.</p>
+            </div>
+          </li>
+          <li class="col-12 col-md-3">
+            <div>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="1em"
+                height="1em"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  fill="currentColor"
+                  d="M12 21.5c-1.35-.85-3.8-1.5-5.5-1.5c-1.65 0-3.35.3-4.75 1.05c-.1.05-.15.05-.25.05c-.25 0-.5-.25-.5-.5V6c.6-.45 1.25-.75 2-1c1.11-.35 2.33-.5 3.5-.5c1.95 0 4.05.4 5.5 1.5c1.45-1.1 3.55-1.5 5.5-1.5c1.17 0 2.39.15 3.5.5c.75.25 1.4.55 2 1v14.6c0 .25-.25.5-.5.5c-.1 0-.15 0-.25-.05c-1.4-.75-3.1-1.05-4.75-1.05c-1.7 0-4.15.65-5.5 1.5m-1-14c-1.36-.6-3.16-1-4.5-1c-1.2 0-2.4.15-3.5.5v11.5c1.1-.35 2.3-.5 3.5-.5c1.34 0 3.14.4 4.5 1zM13 19c1.36-.6 3.16-1 4.5-1c1.2 0 2.4.15 3.5.5V7c-1.1-.35-2.3-.5-3.5-.5c-1.34 0-3.14.4-4.5 1zm1-2.65c.96-.35 2.12-.52 3.5-.52c1.04 0 1.88.08 2.5.24v-1.5a13.9 13.9 0 0 0-6 .19zm0-2.66c.96-.35 2.12-.53 3.5-.53c1.04 0 1.88.08 2.5.24v-1.5c-.87-.16-1.71-.23-2.5-.23c-1.28 0-2.45.15-3.5.45zM14 11c.96-.33 2.12-.5 3.5-.5c.91 0 1.76.09 2.5.28V9.23c-.87-.15-1.71-.23-2.5-.23c-1.32 0-2.5.15-3.5.46z"
+                />
+              </svg>
+              <p>Lebih dari 100 kursus online di berbagai bidang studi.</p>
+            </div>
+          </li>
+          <li class="col-12 col-md-3">
+            <div>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="1em"
+                height="1em"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  fill="currentColor"
+                  d="M9 5a4 4 0 0 1 4 4a4 4 0 0 1-4 4a4 4 0 0 1-4-4a4 4 0 0 1 4-4m0 10c2.67 0 8 1.34 8 4v2H1v-2c0-2.66 5.33-4 8-4m7.76-9.64c2.02 2.2 2.02 5.25 0 7.27l-1.68-1.69c.84-1.18.84-2.71 0-3.89zM20.07 2c3.93 4.05 3.9 10.11 0 14l-1.63-1.63c2.77-3.18 2.77-7.72 0-10.74z"
+                />
+              </svg>
+              <p>
+                500+ materi pembelajaran interaktif yang tersedia di platform.
+              </p>
+            </div>
+          </li>
+          <li class="col-12 col-md-3">
+            <div>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="1em"
+                height="1em"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  fill="currentColor"
+                  d="M18 14h-7.5l2-2H18M6 14v-2.5l6.88-6.86c.19-.19.51-.19.71 0l1.76 1.77c.2.2.2.51 0 .71L8.47 14M20 2H4a2 2 0 0 0-2 2v18l4-4h14a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2"
+                />
+              </svg>
+              <p>
+                95% pengguna memberikan ulasan positif tentang layanan kami.
+              </p>
+            </div>
+          </li>
+        </ul>
+      </section>
+
+      <section id="contact">
+        <h2>Message Us</h2>
+        <div class="row">
+          <div class="col-12 col-md-5">
+            <form id="message-form" name="message-form">
+              <div class="form-group">
+                <label for="name">Nama</label>:
+                <div>
+                  <input type="text" placeholder="Nama" name="name" id="name" />
+                  <p id="error-name" class="error-message"></p>
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="birth-date">Tanggal Lahir</label>:
+                <div>
+                  <input
+                    type="date"
+                    placeholder="Tanggal Lahir"
+                    name="birth-date"
+                    id="birth-date"
+                  />
+                  <p id="error-birth-date" class="error-message"></p>
+                </div>
+              </div>
+              <div class="form-group">
+                <label>Jenis Kelamin </label>:
+                <div>
+                  <input
+                    type="radio"
+                    id="male"
+                    name="gender"
+                    value="Laki-Laki"
+                  />
+                  <label for="male">Laki-Laki</label>
+                  <input
+                    type="radio"
+                    id="female"
+                    name="gender"
+                    value="Perempuan"
+                  />
+                  <label for="female">Perempuan</label>
+                  <p id="error-gender" class="error-message"></p>
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="message">Pesan</label>:
+                <div>
+                  <textarea
+                    name="message"
+                    id="message"
+                    placeholder="Pesan"
+                    rows="5"
+                  ></textarea>
+                  <p id="error-message" class="error-message"></p>
+                </div>
+              </div>
+              <div class="form-group">
+                <button type="submit" id="btn-submit">Submit</button>
+              </div>
+            </form>
+          </div>
+          <div class="col-12 col-md-1"></div>
+          <div class="col-12 col-md-6">
+            <div id="form-result"></div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>© Created By Steven Renaldo Antony</p>
+    </footer>
+
+    <script type="text/javascript" src="./js/script.js"></script>
+  </body>
+</html>
